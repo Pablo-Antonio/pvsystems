@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+
+    <!--Icono de la pagina / Logo Dharma-->
+    <link rel="icon" type="image/png" href="img/icono.png" sizes="30x30">
+
+    <!--Estilo propios-->
+    <link rel="stylesheet" href="assets/css/login.css">
+
+    <!--Libreria JQuery-->
+    <script src="funcionalidad/jquery.min.js"></script>
+
+    <!--Validar Inicio de sesion-->
+    <script src="funcionalidad/logueo.js"></script>
+
+    <!--Plugin para hacer los mensaje de confirmacion SweetAlert-->
+    <script src="sweetalert/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="sweetalert/sweetalert2.min.css">
+
+    <title>COBACH | SLP</title>
+</head>
+
+<body>
+    <div id="contenedor">
+        <div id="central">
+            <div id="login">
+                <div class="titulo">
+                    Bienvenido
+                </div>
+                <div class="logo">
+                    <img src="img/icono.png" alt="">
+                </div>
+                <form id="loginform" autocomplete="off">
+                    <label for="">USUARIO:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+                    <label for="">CONTRASEÑA:</label>
+                    <input type="password" id="password" placeholder="password" name="password" required>
+                    <button type="button" title="Ingresar" name="Ingresar" onclick="validarCamposSesion()">Iniciar Sesion</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!--sumatricula.cbslp.edu.mx-->
